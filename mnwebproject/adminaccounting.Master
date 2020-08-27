@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="adminaccounting.master.cs" Inherits="mnwebproject.adminaccounting" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="Shortcut Icon" href="resimler/mn.jpg" type="image/x-icon" />
+    <link href="Styles/Admin.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+           
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+   <form id="Form1" runat="server">
+    <div class="header" >
+    <div style="position: absolute; width: 50px; height: 50px; top: 10px; left:38px">
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/resimler/muhammetnaradmin.png" />
+    </div> 
+     <div style="position: absolute; width: 50px; height: 50px; left:14px; top: 45px" >
+        <asp:Image ID="Image2" runat="server" ImageUrl="~/resimler/softwaredeveloperadmin.png" />
+    </div>
+    </div>
+    
+     <center>
+         <asp:Menu ID="Menu2" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Vertical">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/adminhomepage.aspx" Text="Admin Anasayfa"/>
+                        <asp:MenuItem NavigateUrl="~/adminaccountingprocesshomepage.aspx" Text="Muhasebe Anasayfa"/>
+                        <asp:MenuItem NavigateUrl="~/adminaccountingcategoryprocess.aspx" Text="Kategori İşlemleri"/>
+                        <asp:MenuItem NavigateUrl="~/adminaccountingsubcategoryprocess.aspx" Text="Alt Kategori İşlemleri"/>
+                        <asp:MenuItem NavigateUrl="~/adminaccountingspendprocess.aspx" Text="Harcama İşlemleri" />
+                    </Items>
+                    
+                </asp:Menu>
+         
+</center>
+<div class="page2">
+<div class="main2">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                
+        </asp:ContentPlaceHolder>
+            
+        </div>
+        </div> 
+       <div class="main3">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            
+        </div>
+        
+    <div class="page">
+
+         
+
+        <div class="main">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            
+        </div>
+        
+    </div>
+    <div class="footer">
+ 
+    </div>
+  
+    </form>
+</body>
+</html>

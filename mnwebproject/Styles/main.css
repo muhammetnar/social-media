@@ -1,0 +1,257 @@
+﻿body 
+{
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+}
+
+.buttons 
+{
+    background-color: #eae8e8; 
+    border: none;
+    color: black;
+    padding: 7px 30px;
+    margin:-2px -2px -2px -2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 0.5px #D2D2D2 solid;
+    width: auto;
+    font-size:20px;
+    font-family:Arial;   
+}
+
+.buttons:hover {
+    background-color: #a8d9e7;
+    border: 0.5px #89cbde solid; 
+    color:black ;
+}
+.buttons:active
+{
+    background-color: #a8d9e7;
+    border: 0.5px #89cbde solid; 
+    color:black ;
+    }
+.buttonyan 
+{
+    background-color: #E2E2E2; 
+    border: none;
+    color: black;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 0.5px #D2D2D2 solid;
+    width: auto;
+    font-size:20px;
+    font-family:Arial;
+    width:136px;   
+}
+
+.buttonyan:hover {
+    background-color: #90C8FF;
+    border: 0.5px #6DB6FF solid; 
+    color:white ;
+}
+
+inputs:-webkit-input-placeholder {
+    color: #b5b5b5;
+}
+
+inputs-moz-placeholder {
+    color: #b5b5b5;
+}
+
+.inputs {
+    width: 170px;
+    padding: 6px 15px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #9D9E9E;
+    text-shadow: 1px 1px 0 rgba(256, 256, 256, 1.0);
+    background: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.50);
+    -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.50);
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.50);
+}
+
+.inputs:focus {
+    background: #DFE9EC;
+    color: #414848;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25);
+    outline: 0;
+}
+
+.inputs:hover {
+    background: #DFE9EC;
+    color: #414848;
+   
+}
+
+.label
+{
+    font-family:Arial;
+    font-size:large;
+   color:#3a4f63;
+    }
+    
+  .icerikbutton
+{
+    background-color: #eae8e8; 
+    border: none;
+    color: black;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 0.5px #D2D2D2 solid;
+    width: auto;
+    font-size:17px;
+    font-family:Arial;   
+    
+    }
+
+.icerikbutton:hover {
+    background-color: #a8d9e7;
+    border: 0.5px #89cbde solid; 
+    color:#354655 ;
+}
+
+.facebook
+{
+    background-color: #465c71; 
+    border-radius:500px;
+    -moz-border-radius:500px;
+    -webkit-border-radius:500px;
+    color: #ABA8A8;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px #ABA8A8 solid;
+    width: auto;
+    font-size:x-large;
+    font-family:Tahoma;
+    font-weight:bold;
+    
+   
+    }
+    
+    .facebook:hover {
+    background-color: #3b5998; 
+    color:#ffffff ;
+}
+
+.twitter
+{
+    background-color: #465c71; 
+    border-radius:500px;
+    -moz-border-radius:500px;
+    -webkit-border-radius:500px;
+    color: #ABA8A8;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px #ABA8A8 solid;
+    width: auto;
+    font-size:x-large;
+    font-family:Sans-Serif;
+    font-weight:bold;
+    
+    
+    }
+    
+    .twitter:hover {
+    background-color: #55ACEE; 
+    color:#ffffff ;
+}
+
+.instagram
+{
+    background-color: #465c71; 
+    border-radius:500px;
+    -moz-border-radius:500px;
+    -webkit-border-radius:500px;
+    color: #ABA8A8;
+    padding: 9px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px #ABA8A8 solid;
+    width: auto;
+    font-size:large;
+    font-family:Sans-Serif;
+    font-weight:bold;
+    
+    
+    }
+    
+    .instagram:hover {
+    background-color: #786030; 
+    color:#ffffff ;
+}
+
+    .login
+{
+    background-color: #eae8e8; 
+    border-radius:15px;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    color: black;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 0.5px #D2D2D2 solid;
+    width: auto;
+    font-size:medium;
+    font-family:Arial;
+    font-weight:medium;
+    }
+    
+    .login:hover {
+    background-color: #c7e0e7; 
+    color:black ;
+    border: 0.5px #89cbde solid; 
+}
+
+.logobutton {
+    color:#2f2f2f;
+    font-size:40px;
+    font-family:Papyrus;
+    font-weight:bolder;
+    text-decoration:none;
+}
+.logobutton:hover {
+    color:#f9f6f6;
+}
+
+.languagebutton
+{
+    background-color: #eae8e8; 
+    border: none;
+    color: black;
+    padding: 5px 6px;
+    margin:-2px -2px -2px -2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 0.5px #D2D2D2 solid;
+    width: auto;
+    font-size:13px;
+    font-family:Arial;   
+}
+
+.languagebutton:hover {
+    background-color: #a8d9e7;
+    border: 0.5px #89cbde solid; 
+    color:black ;
+}

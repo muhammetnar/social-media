@@ -1,0 +1,614 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F835A01B-898A-486E-9CFB-CF26E70127CD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>mnwebproject</RootNamespace>
+    <AssemblyName>mnwebproject</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gallery_en.aspx" />
+    <Content Include="gallery_tr.aspx" />
+    <Content Include="JavaScript\JavaScript.js" />
+    <Content Include="packages.config" />
+    <Content Include="main.Master" />
+    <Content Include="adminmain.Master" />
+    <Content Include="adminannounceprocess.aspx" />
+    <Content Include="adminnewsprocess.aspx" />
+    <Content Include="adminphotocategoryprocess.aspx" />
+    <Content Include="adminphotogalleryprocess.aspx" />
+    <Content Include="about_tr.aspx" />
+    <Content Include="adminaboutprocess.aspx" />
+    <Content Include="admincontactprocess.aspx" />
+    <Content Include="contact_tr.aspx" />
+    <Content Include="adminuser.Master" />
+    <Content Include="adminuserprocesshomepage.aspx" />
+    <Content Include="adminuserarticleprocess.aspx" />
+    <Content Include="adminusereditprocess.aspx" />
+    <Content Include="adminuserlistprocess.aspx" />
+    <Content Include="adminuserrequestandsuggestionprocess.aspx" />
+    <Content Include="adminaccounting.Master" />
+    <Content Include="adminaccountingprocesshomepage.aspx" />
+    <Content Include="adminaccountingcategoryprocess.aspx" />
+    <Content Include="adminaccountingsubcategoryprocess.aspx" />
+    <Content Include="adminaccountingspendprocess.aspx" />
+    <Content Include="Scripts\diapo.js" />
+    <Content Include="Scripts\diapo.min.js" />
+    <Content Include="Scripts\diapo\next.png" />
+    <Content Include="Scripts\diapo\pause.png" />
+    <Content Include="Scripts\diapo\play.png" />
+    <Content Include="Scripts\diapo\prev.png" />
+    <Content Include="Styles\main.css" />
+    <Content Include="Styles\slider.css" />
+    <Content Include="Styles\user.css" />
+    <Content Include="userhomepage_tr.aspx" />
+    <Content Include="userlogin_tr.aspx" />
+    <Content Include="usersettings_tr.aspx" />
+    <Content Include="userfollowers_tr.aspx" />
+    <Content Include="userprofile_tr.aspx" />
+    <Content Include="userfollowing_tr.aspx" />
+    <Content Include="userfollowrequest_tr.aspx" />
+    <Content Include="userarticle_tr.aspx" />
+    <Content Include="photogallery_tr.aspx" />
+    <Content Include="userphotogallery_tr.aspx" />
+    <Content Include="usermessages_tr.aspx" />
+    <Content Include="userrequestsuggestion_tr.aspx" />
+    <Content Include="main_en.Master" />
+    <Content Include="homepage_en.aspx" />
+    <Content Include="photogallery_en.aspx" />
+    <Content Include="contact_en.aspx" />
+    <Content Include="about_en.aspx" />
+    <Content Include="userlogin_en.aspx" />
+    <Content Include="userregistration_en.aspx" />
+    <Content Include="userhomepage_en.aspx" />
+    <Content Include="usersettings_en.aspx" />
+    <Content Include="userarticle_en.aspx" />
+    <Content Include="userphotogallery_en.aspx" />
+    <Content Include="usermessages_en.aspx" />
+    <Content Include="userreguestsuggestion_en.aspx" />
+    <Content Include="userfollowrequest_en.aspx" />
+    <Content Include="userfollowers_en.aspx" />
+    <Content Include="userfollowing_en.aspx" />
+    <Content Include="userprofile_en.aspx" />
+    <None Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery.easing.1.3.js" />
+    <Content Include="Scripts\jquery.hoverIntent.minified.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery.mobile-1.0rc2.customized.min.js" />
+    <Content Include="Scripts\_notes\dwsync.xml" />
+    <Content Include="userregistration_tr.aspx" />
+    <Content Include="Scripts\.DS_Store" />
+    <Content Include="user.Master" />
+    <Content Include="user_en.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="adminlogin.aspx" />
+    <Content Include="Styles\Admin.css" />
+    <Content Include="Web.config" />
+    <Content Include="Default.aspx" />
+    <Content Include="adminhomepage.aspx" />
+    <Content Include="adminslideprocess.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminaccounting.Master.cs">
+      <DependentUpon>adminaccounting.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminaccounting.Master.designer.cs">
+      <DependentUpon>adminaccounting.Master</DependentUpon>
+    </Compile>
+    <Compile Include="adminlogin.aspx.cs">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminlogin.aspx.designer.cs">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminmain.Master.cs">
+      <DependentUpon>adminmain.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminmain.Master.designer.cs">
+      <DependentUpon>adminmain.Master</DependentUpon>
+    </Compile>
+    <Compile Include="adminuser.Master.cs">
+      <DependentUpon>adminuser.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminuser.Master.designer.cs">
+      <DependentUpon>adminuser.Master</DependentUpon>
+    </Compile>
+    <Compile Include="gallery_en.aspx.cs">
+      <DependentUpon>gallery_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gallery_en.aspx.designer.cs">
+      <DependentUpon>gallery_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gallery_tr.aspx.cs">
+      <DependentUpon>gallery_tr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gallery_tr.aspx.designer.cs">
+      <DependentUpon>gallery_tr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main.Master.cs">
+      <DependentUpon>main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main.Master.designer.cs">
+      <DependentUpon>main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="main_en.Master.cs">
+      <DependentUpon>main_en.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main_en.Master.designer.cs">
+      <DependentUpon>main_en.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminhomepage.aspx.cs">
+      <DependentUpon>adminhomepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminhomepage.aspx.designer.cs">
+      <DependentUpon>adminhomepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminslideprocess.aspx.cs">
+      <DependentUpon>adminslideprocess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminslideprocess.aspx.designer.cs">
+      <DependentUpon>adminslideprocess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminannounceprocess.aspx.cs">
+      <DependentUpon>adminannounceprocess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminannounceprocess.aspx.designer.cs">
+      <DependentUpon>adminannounceprocess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminnewsprocess.aspx.cs">
+      <DependentUpon>adminnewsprocess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminnewsprocess.aspx.designer.cs">
+      <DependentUpon>adminnewsprocess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminphotocategoryprocess.aspx.cs">
+      <DependentUpon>adminphotocategoryprocess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminphotocategoryprocess.aspx.designer.cs">
+      <DependentUpon>adminphotocategoryprocess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminphotogalleryprocess.aspx.cs">
+      <DependentUpon>adminphotogalleryprocess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminphotogalleryprocess.aspx.designer.cs">
+      <DependentUpon>adminphotogalleryprocess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="about_tr.aspx.cs">
+      <DependentUpon>about_tr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="about_tr.aspx.designer.cs">
+      <DependentUpon>about_tr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminaboutprocess.aspx.cs">
+      <DependentUpon>adminaboutprocess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminaboutprocess.aspx.designer.cs">
+      <DependentUpon>adminaboutprocess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admincontactprocess.aspx.cs">
+      <DependentUpon>admincontactprocess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admincontactprocess.aspx.designer.cs">
+      <DependentUpon>admincontactprocess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact_tr.aspx.cs">
+      <DependentUpon>contact_tr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact_tr.aspx.designer.cs">
+      <DependentUpon>contact_tr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminuserprocesshomepage.aspx.cs">
+      <DependentUpon>adminuserprocesshomepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminuserprocesshomepage.aspx.designer.cs">
+      <DependentUpon>adminuserprocesshomepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminuserarticleprocess.aspx.cs">
+      <DependentUpon>adminuserarticleprocess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminuserarticleprocess.aspx.designer.cs">
+      <DependentUpon>adminuserarticleprocess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminusereditprocess.aspx.cs">
+      <DependentUpon>adminusereditprocess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminusereditprocess.aspx.designer.cs">
+      <DependentUpon>adminusereditprocess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminuserlistprocess.aspx.cs">
+      <DependentUpon>adminuserlistprocess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminuserlistprocess.aspx.designer.cs">
+      <DependentUpon>adminuserlistprocess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminuserrequestandsuggestionprocess.aspx.cs">
+      <DependentUpon>adminuserrequestandsuggestionprocess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminuserrequestandsuggestionprocess.aspx.designer.cs">
+      <DependentUpon>adminuserrequestandsuggestionprocess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminaccountingprocesshomepage.aspx.cs">
+      <DependentUpon>adminaccountingprocesshomepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminaccountingprocesshomepage.aspx.designer.cs">
+      <DependentUpon>adminaccountingprocesshomepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminaccountingcategoryprocess.aspx.cs">
+      <DependentUpon>adminaccountingcategoryprocess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminaccountingcategoryprocess.aspx.designer.cs">
+      <DependentUpon>adminaccountingcategoryprocess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminaccountingsubcategoryprocess.aspx.cs">
+      <DependentUpon>adminaccountingsubcategoryprocess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminaccountingsubcategoryprocess.aspx.designer.cs">
+      <DependentUpon>adminaccountingsubcategoryprocess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminaccountingspendprocess.aspx.cs">
+      <DependentUpon>adminaccountingspendprocess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminaccountingspendprocess.aspx.designer.cs">
+      <DependentUpon>adminaccountingspendprocess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user.Master.cs">
+      <DependentUpon>user.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.Master.designer.cs">
+      <DependentUpon>user.Master</DependentUpon>
+    </Compile>
+    <Compile Include="userlogin_tr.aspx.cs">
+      <DependentUpon>userlogin_tr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userlogin_tr.aspx.designer.cs">
+      <DependentUpon>userlogin_tr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userregistration_tr.aspx.cs">
+      <DependentUpon>userregistration_tr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userregistration_tr.aspx.designer.cs">
+      <DependentUpon>userregistration_tr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userhomepage_tr.aspx.cs">
+      <DependentUpon>userhomepage_tr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userhomepage_tr.aspx.designer.cs">
+      <DependentUpon>userhomepage_tr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usersettings_tr.aspx.cs">
+      <DependentUpon>usersettings_tr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usersettings_tr.aspx.designer.cs">
+      <DependentUpon>usersettings_tr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userfollowers_tr.aspx.cs">
+      <DependentUpon>userfollowers_tr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userfollowers_tr.aspx.designer.cs">
+      <DependentUpon>userfollowers_tr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userprofile_tr.aspx.cs">
+      <DependentUpon>userprofile_tr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userprofile_tr.aspx.designer.cs">
+      <DependentUpon>userprofile_tr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userfollowing_tr.aspx.cs">
+      <DependentUpon>userfollowing_tr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userfollowing_tr.aspx.designer.cs">
+      <DependentUpon>userfollowing_tr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userfollowrequest_tr.aspx.cs">
+      <DependentUpon>userfollowrequest_tr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userfollowrequest_tr.aspx.designer.cs">
+      <DependentUpon>userfollowrequest_tr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userarticle_tr.aspx.cs">
+      <DependentUpon>userarticle_tr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userarticle_tr.aspx.designer.cs">
+      <DependentUpon>userarticle_tr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="photogallery_tr.aspx.cs">
+      <DependentUpon>photogallery_tr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="photogallery_tr.aspx.designer.cs">
+      <DependentUpon>photogallery_tr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userphotogallery_tr.aspx.cs">
+      <DependentUpon>userphotogallery_tr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userphotogallery_tr.aspx.designer.cs">
+      <DependentUpon>userphotogallery_tr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usermessages_tr.aspx.cs">
+      <DependentUpon>usermessages_tr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usermessages_tr.aspx.designer.cs">
+      <DependentUpon>usermessages_tr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userrequestsuggestion_tr.aspx.cs">
+      <DependentUpon>userrequestsuggestion_tr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userrequestsuggestion_tr.aspx.designer.cs">
+      <DependentUpon>userrequestsuggestion_tr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homepage_en.aspx.cs">
+      <DependentUpon>homepage_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homepage_en.aspx.designer.cs">
+      <DependentUpon>homepage_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="photogallery_en.aspx.cs">
+      <DependentUpon>photogallery_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="photogallery_en.aspx.designer.cs">
+      <DependentUpon>photogallery_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact_en.aspx.cs">
+      <DependentUpon>contact_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact_en.aspx.designer.cs">
+      <DependentUpon>contact_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="about_en.aspx.cs">
+      <DependentUpon>about_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="about_en.aspx.designer.cs">
+      <DependentUpon>about_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userlogin_en.aspx.cs">
+      <DependentUpon>userlogin_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userlogin_en.aspx.designer.cs">
+      <DependentUpon>userlogin_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userregistration_en.aspx.cs">
+      <DependentUpon>userregistration_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userregistration_en.aspx.designer.cs">
+      <DependentUpon>userregistration_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_en.Master.cs">
+      <DependentUpon>user_en.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user_en.Master.designer.cs">
+      <DependentUpon>user_en.Master</DependentUpon>
+    </Compile>
+    <Compile Include="userhomepage_en.aspx.cs">
+      <DependentUpon>userhomepage_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userhomepage_en.aspx.designer.cs">
+      <DependentUpon>userhomepage_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usersettings_en.aspx.cs">
+      <DependentUpon>usersettings_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usersettings_en.aspx.designer.cs">
+      <DependentUpon>usersettings_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userarticle_en.aspx.cs">
+      <DependentUpon>userarticle_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userarticle_en.aspx.designer.cs">
+      <DependentUpon>userarticle_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userphotogallery_en.aspx.cs">
+      <DependentUpon>userphotogallery_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userphotogallery_en.aspx.designer.cs">
+      <DependentUpon>userphotogallery_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usermessages_en.aspx.cs">
+      <DependentUpon>usermessages_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usermessages_en.aspx.designer.cs">
+      <DependentUpon>usermessages_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userreguestsuggestion_en.aspx.cs">
+      <DependentUpon>userreguestsuggestion_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userreguestsuggestion_en.aspx.designer.cs">
+      <DependentUpon>userreguestsuggestion_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userfollowrequest_en.aspx.cs">
+      <DependentUpon>userfollowrequest_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userfollowrequest_en.aspx.designer.cs">
+      <DependentUpon>userfollowrequest_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userfollowers_en.aspx.cs">
+      <DependentUpon>userfollowers_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userfollowers_en.aspx.designer.cs">
+      <DependentUpon>userfollowers_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userfollowing_en.aspx.cs">
+      <DependentUpon>userfollowing_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userfollowing_en.aspx.designer.cs">
+      <DependentUpon>userfollowing_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userprofile_en.aspx.cs">
+      <DependentUpon>userprofile_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userprofile_en.aspx.designer.cs">
+      <DependentUpon>userprofile_en.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49860</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49860/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

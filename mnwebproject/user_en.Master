@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="user_en.master.cs" Inherits="mnwebproject.user_en" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+       <title></title>
+    <link rel="Shortcut Icon" href="resimler/mn.jpg" type="image/x-icon" />
+    <link href="Styles/user.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color:#E7E4E4;">
+ <form id="Form1" runat="server">
+    <div class="header" style=" background-color:#94cedf;" >
+    <div style="position:relative; width:400px; height:30px; top: 5px; left: 20px;" align="left"> 
+        <a href="userhomepage_en.aspx" class="logobutton" >Muhammet Nar<div  style="font-size:18px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Software Developer</div></a>
+</div>    
+
+         <div style="position:relative; width:100px; height:30px; top: -15px; left: 1194px;" align="left"> 
+       <asp:Button ID="Button3" runat="server" Text="TR" CssClass="languagebutton" PostBackUrl="~/userhomepage_tr.aspx" /> 
+        <asp:Button ID="Button7" runat="server" Text="EN" CssClass="languagebutton" PostBackUrl="~/userhomepage_en.aspx" /> 
+</div>  
+    </div>
+    
+     <center>
+         <div class="detaybilgi" style=" background-color:#c7e0e7; border: 1px solid #bfd7de; height:568px;"">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                
+        </asp:ContentPlaceHolder>
+         </div>
+         
+     </center>
+<div class="page2">
+
+<div class="main2" style=" background-color:#c7e0e7; border: 1px solid #bfd7de;">
+            
+  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+ 
+        </div>
+
+        </div> 
+    <div class="page"  style=" background-color:#f9f6f6; border: 1px solid #D2D2D2; height:auto; margin-top:13px;"">
+
+        <div class="main" >
+         <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+            
+                
+        </asp:ContentPlaceHolder>
+
+        </div>
+
+    </div>
+  
+    </form>
+  
+</body>
+</html>

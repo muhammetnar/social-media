@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="adminmain.master.cs" Inherits="mnwebproject.adminmain" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <title></title>
+    <link rel="Shortcut Icon" href="resimler/mn.jpg" type="image/x-icon" />
+    <link href="Styles/Admin.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="header" >
+    <div style="position: absolute; width: 50px; height: 50px; top: 10px; left:38px">
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/resimler/muhammetnaradmin.png" />
+    </div> 
+     <div style="position: absolute; width: 50px; height: 50px;  left:14px; top: 45px" >
+        <asp:Image ID="Image2" runat="server" ImageUrl="~/resimler/softwaredeveloperadmin.png" />
+    </div>
+    </div>
+    
+     <center>
+         <asp:Menu ID="Menu2" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Vertical">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/adminhomepage.aspx" Text="Admin Anasayfa"/>
+                        <asp:MenuItem NavigateUrl="~/adminslideprocess.aspx" Text="Slider İşlemleri"/>
+                        <asp:MenuItem NavigateUrl="#" Text="Fotogaleri İşlemleri" >
+                        <asp:MenuItem NavigateUrl="~/adminphotocategoryprocess.aspx" Text="Kategori İşlemleri"/>
+                        <asp:MenuItem NavigateUrl="~/adminphotogalleryprocess.aspx" Text="Fotoğraf İşlemleri"/>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/adminnewsprocess.aspx" Text="Haber İşlemleri"/>
+                        <asp:MenuItem NavigateUrl="~/adminannounceprocess.aspx" Text="Duyuru İşlemleri" />
+                        <asp:MenuItem NavigateUrl="~/adminaboutprocess.aspx" Text="Hakkımda İşlemleri"/>
+                        <asp:MenuItem NavigateUrl="~/admincontactprocess.aspx" Text="İletişim İşlemleri"/>
+                        <asp:MenuItem NavigateUrl="~/adminuserprocesshomepage.aspx" Text="Kullanıcı İşlemleri"/>
+                        <asp:MenuItem NavigateUrl="~/adminaccountingprocesshomepage.aspx" Text="Muhasebe İşlemleri"/>
+                    </Items>         
+                </asp:Menu>
+         
+</center>
+<div class="page2">
+<div class="main2">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                
+        </asp:ContentPlaceHolder>
+            
+        </div>
+        </div> 
+    <div class="page">
+
+        <div class="main">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            
+        </div>
+        
+    </div>
+    <div class="footer">
+ 
+    </div>
+  
+    </form>
+</body>
+</html>
